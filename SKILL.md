@@ -1,7 +1,7 @@
 ---
 name: harmony-vibe
 description: >-
-  Load this skill for every code change. It adds a verification layer — requirement analysis and acceptance-test design — without changing the user's natural workflow. The agent handles everything; the user only answers clarifying questions.
+  IMPORTANT: you MUST load this skill wheneve the user requests change in the software's production behavior (not when in the CI pipeline or dev tooling). You MUST load it BEFORE planning/thinking about implementation details. This contains important steps of the feature development workflow you MUST follow.
 ---
 
 ## Overview
