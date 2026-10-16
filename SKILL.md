@@ -1,5 +1,5 @@
 ---
-name: harmony-v
+name: harmony-vibe
 description: >-
   Load this skill for every code change. It adds a verification layer — requirement analysis and acceptance-test design — without changing the user's natural workflow. The agent handles everything; the user only answers clarifying questions.
 ---
@@ -37,6 +37,7 @@ Test implementations live in the project's normal test folders (e.g. `tests/`, `
 See `steps/01-specify.md` for the full process.
 
 Summary:
+
 - Derive requirements text (workflow-dependent; see `workflows/`).
 - Write to `harmony/features/<feature-name>/requirements.md`.
 - Run `cli.js analyze` and save result.
@@ -50,6 +51,7 @@ For MVP: one analysis turn only (no re-analysis loop).
 See `steps/02-verify.md` for the full process.
 
 Summary:
+
 - Run `cli.js test-design` and save to `harmony/features/<feature-name>/tests.harmony.md`.
 - Define the **interface contract** (types, signatures, module boundaries).
 - Fire parallel subagents:
@@ -63,6 +65,7 @@ Summary:
 ## Workflow Adapters
 
 Pick the appropriate workflow file from `workflows/` before starting Step 1. It tells you:
+
 1. Where the initial requirements come from.
 2. How much to infer vs. reuse.
 3. Which anomalies are autopilot vs. blocking (for now: all blocking).
@@ -86,6 +89,7 @@ node cli.js test-design --file harmony/features/auth/requirements.md --out tests
 ```
 
 Environment variables:
+
 - `HARMONY_API_URL` — override base URL (default: `https://cloud.harmony.ac`)
 
 ## Notes
