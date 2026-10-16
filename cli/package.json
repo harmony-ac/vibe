@@ -1,0 +1,15 @@
+{
+  "name": "harmony-v-cli",
+  "version": "0.1.0",
+  "description": "Harmony Vibe CLI — agent-facing CLI for requirement analysis and test design",
+  "main": "cli.js",
+  "bin": {
+    "harmony-v": "cli.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node cli.js"
+  }
+}
